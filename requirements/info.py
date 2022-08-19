@@ -4,6 +4,7 @@ __credits__        =      ""
 __copyright__      =      "Copyright 2022, Nouvellie"
 __email__          =      "roberto.rocuantv@gmail.com"
 __maintainer__     =      "Rocuant Roberto"
+__license__        =      "GPL v3.0"
 __prod__           =      ""
 __version__        =      "0.1.0"
 __logs__           =      {
@@ -20,6 +21,7 @@ info = {
     '__credits__': __credits__,
     '__copyright__': __copyright__,
     '__email__': __email__,
+    '__license__': __license__,
     '__logs__': __logs__,
     '__maintainer__': __maintainer__,
     '__prod__': __prod__,
@@ -32,4 +34,4 @@ class dotdict(dict):
     __setattr__ = dict.__setitem__
     __delattr__ = dict.__delitem__
 
-info = dotdict(dict=info)
+info = dotdict(dict=info)['dict']
